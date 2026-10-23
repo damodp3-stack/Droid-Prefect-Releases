@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/latest">
-    <img src="https://img.shields.io/badge/Release-v1.0.8-brightgreen?style=for-the-badge&logo=android" alt="Release">
+    <img src="https://img.shields.io/badge/Release-v1.0.9-brightgreen?style=for-the-badge&logo=android" alt="Release">
   </a>
   <img src="https://img.shields.io/badge/Platform-Android%208.0+-blue?style=for-the-badge&logo=google" alt="Platform">
   <img src="https://img.shields.io/badge/Security-SHA--256%20Verified-purple?style=for-the-badge&logo=shield" alt="Security">
@@ -25,31 +25,33 @@
 Get the latest production release of Droid Prefect directly to your Android device:
 
 <p align="center">
-  <a href="https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.0.8/DroidPrefect.apk">
+  <a href="https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.0.9/DroidPrefect.apk">
     <img src="https://img.shields.io/badge/Download-DroidPrefect.apk%20(55.2%20MB)-0284C7?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="48">
   </a>
 </p>
 
 | Package | Version | Build | Size | SHA-256 Integrity Hash |
 | :--- | :--- | :--- | :--- | :--- |
-| `DroidPrefect.apk` | **v1.0.8** | `9` | `55.2 MB` | `fa527e8be72f8205f192686302dbc29a1af8c8f2cefbcaeda30c2d96b467db15` |
+| `DroidPrefect.apk` | **v1.0.9** | `10` | `55.2 MB` | `dfa87362bd20f7327b3606caadc352c86e02847a705e7aa916b9a4ca5f9740b1` |
 
 *All previous builds are available on the [GitHub Releases Archive](https://github.com/damodp3-stack/Droid-Prefect-Releases/releases).*
 
 ---
 
-## 🚀 What's New in v1.0.8
+## 🚀 What's New in v1.0.9
 
-- **⚡ 4 New Mobile Open-Source On-Device AI Models:**
-  - `Qwen 2.5 1.5B Instruct` (High reasoning, fast inference)
-  - `DeepSeek R1 Distill Qwen 1.5B` (Advanced reasoning & step-by-step thinking)
-  - `SmolLM2 360M Instruct` (Ultra-lightweight ~373MB for low RAM devices)
-  - `SmolLM2 1.7B Instruct` (High quality general chat)
-  - *All 4 models are public and require **zero** Hugging Face tokens — download and chat completely offline!*
-- **🛠️ Crash Fix:** Resolved Android 14+ `SecurityException` during screen state broadcast receiver registration in Accessibility Service.
-- **🛡️ Android 13+ Restricted Settings Guide:** Added step-by-step guidance dialog when enabling Accessibility and SMS on sideloaded installations.
-- **💬 Enhanced Chat Diagnostics:** When on-device AI model is not downloaded or cloud API key is missing, Droid Prefect displays clear action instructions in chat instead of failing silently.
-- **🎯 Default Offline Model:** Switched default offline model to ultra-fast `Qwen 2.5 0.5B`.
+- **🛡️ Eliminated Security & Financial Loss Alerts:**
+  - Removed high-risk direct telephony permissions (`CALL_PHONE`, `SEND_SMS`, `READ_SMS`, `RECEIVE_SMS`) that triggered OEM Phone Manager & Play Protect flags.
+  - Calling and SMS actions now seamlessly and safely delegate via Android standard intents with Accessibility Service automation.
+- **💬 Instant Greeting & Chat Fallback:**
+  - Instant offline greetings for "hi", "hey", "hello", "vanakkam", "help" without needing any LLM loaded.
+  - If no model is downloaded or API key is absent, the assistant displays a clear instruction card with a direct path to download offline models in Settings.
+- **⚡ Default Offline Mode:**
+  - On-Device AI is now the default provider out of the box with zero external token requirements.
+- **🧠 Open-Source Model Hub:**
+  - One-tap download for Qwen 2.5 0.5B, Qwen 2.5 1.5B, DeepSeek R1 Distill Qwen 1.5B, and SmolLM2.
+- **📲 Accessibility & Restricted Settings Assistant:**
+  - Clear guide dialog to seamlessly allow Accessibility on Android 13 & 14+.
 
 ---
 

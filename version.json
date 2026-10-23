@@ -1,9 +1,9 @@
 {
-  "versionCode": 9,
-  "versionName": "1.0.8",
-  "changelog": "• Added 4 high-performance mobile open-source on-device AI models: Qwen 2.5 1.5B, DeepSeek R1 Distill Qwen 1.5B, SmolLM2 360M, and SmolLM2 1.7B with zero HF token required\n• Fixed app crash on Android 14+ when enabling Accessibility service\n• Added Android 13+ Restricted Settings guide dialog for Accessibility and SMS\n• Fixed silent chat fallback when offline on-device AI model is not downloaded\n• Set default offline model to ultra-fast Qwen 2.5 0.5B",
-  "downloadUrl": "https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.0.8/DroidPrefect.apk",
-  "sha256": "fa527e8be72f8205f192686302dbc29a1af8c8f2cefbcaeda30c2d96b467db15",
+  "versionCode": 10,
+  "versionName": "1.0.9",
+  "changelog": "• Resolved system security & financial loss alerts by eliminating direct sensitive telephony/SMS permissions in favor of standard Android intents with auto-actions\n• Fixed silent chat: instant offline responses for greetings and clear actionable guidance if an offline model needs downloading\n• Set offline on-device AI as the default out-of-the-box provider\n• Enhanced on-device AI model hub with instant 1-tap download for Qwen 2.5 0.5B, Qwen 2.5 1.5B, DeepSeek R1 Distill Qwen 1.5B, and SmolLM2 models\n• Added Android 13/14+ Restricted Settings step-by-step resolution dialog for Accessibility Service",
+  "downloadUrl": "https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.0.9/DroidPrefect.apk",
+  "sha256": "dfa87362bd20f7327b3606caadc352c86e02847a705e7aa916b9a4ca5f9740b1",
   "apkSizeMb": 55.21,
   "isMandatory": false
 }
