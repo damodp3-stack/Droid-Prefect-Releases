@@ -1,9 +1,9 @@
 {
-  "versionCode": 10,
-  "versionName": "1.0.9",
-  "changelog": "• Resolved system security & financial loss alerts by eliminating direct sensitive telephony/SMS permissions in favor of standard Android intents with auto-actions\n• Fixed silent chat: instant offline responses for greetings and clear actionable guidance if an offline model needs downloading\n• Set offline on-device AI as the default out-of-the-box provider\n• Enhanced on-device AI model hub with instant 1-tap download for Qwen 2.5 0.5B, Qwen 2.5 1.5B, DeepSeek R1 Distill Qwen 1.5B, and SmolLM2 models\n• Added Android 13/14+ Restricted Settings step-by-step resolution dialog for Accessibility Service",
-  "downloadUrl": "https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.0.9/DroidPrefect.apk",
-  "sha256": "dfa87362bd20f7327b3606caadc352c86e02847a705e7aa916b9a4ca5f9740b1",
+  "versionCode": 11,
+  "versionName": "1.1.0",
+  "changelog": "• Fixed integrity check hash mismatch on LiteRT on-device AI models (DeepSeek R1 Distill 1.5B, Qwen 2.5 1.5B, SmolLM2 360M, SmolLM2 1.7B) by aligning with Git LFS SHA-256 digests\n• Fixed model card header UI overflow and vertical badge squishing in Settings\n• Refined model badge display to clean, responsive labels\n• Seamless 1-tap download and instant offline verification",
+  "downloadUrl": "https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.1.0/DroidPrefect.apk",
+  "sha256": "743e24c9be8bc726166b698198fd239c81a95950109694aa27a32a7ee234e3f5",
   "apkSizeMb": 55.21,
   "isMandatory": false
 }

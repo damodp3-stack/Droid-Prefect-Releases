@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/latest">
-    <img src="https://img.shields.io/badge/Release-v1.0.9-brightgreen?style=for-the-badge&logo=android" alt="Release">
+    <img src="https://img.shields.io/badge/Release-v1.1.0-brightgreen?style=for-the-badge&logo=android" alt="Release">
   </a>
   <img src="https://img.shields.io/badge/Platform-Android%208.0+-blue?style=for-the-badge&logo=google" alt="Platform">
   <img src="https://img.shields.io/badge/Security-SHA--256%20Verified-purple?style=for-the-badge&logo=shield" alt="Security">
@@ -25,33 +25,29 @@
 Get the latest production release of Droid Prefect directly to your Android device:
 
 <p align="center">
-  <a href="https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.0.9/DroidPrefect.apk">
+  <a href="https://github.com/damodp3-stack/Droid-Prefect-Releases/releases/download/v1.1.0/DroidPrefect.apk">
     <img src="https://img.shields.io/badge/Download-DroidPrefect.apk%20(55.2%20MB)-0284C7?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="48">
   </a>
 </p>
 
 | Package | Version | Build | Size | SHA-256 Integrity Hash |
 | :--- | :--- | :--- | :--- | :--- |
-| `DroidPrefect.apk` | **v1.0.9** | `10` | `55.2 MB` | `dfa87362bd20f7327b3606caadc352c86e02847a705e7aa916b9a4ca5f9740b1` |
+| `DroidPrefect.apk` | **v1.1.0** | `11` | `55.2 MB` | `743e24c9be8bc726166b698198fd239c81a95950109694aa27a32a7ee234e3f5` |
 
 *All previous builds are available on the [GitHub Releases Archive](https://github.com/damodp3-stack/Droid-Prefect-Releases/releases).*
 
 ---
 
-## 🚀 What's New in v1.0.9
+## 🚀 What's New in v1.1.0
 
-- **🛡️ Eliminated Security & Financial Loss Alerts:**
-  - Removed high-risk direct telephony permissions (`CALL_PHONE`, `SEND_SMS`, `READ_SMS`, `RECEIVE_SMS`) that triggered OEM Phone Manager & Play Protect flags.
-  - Calling and SMS actions now seamlessly and safely delegate via Android standard intents with Accessibility Service automation.
-- **💬 Instant Greeting & Chat Fallback:**
-  - Instant offline greetings for "hi", "hey", "hello", "vanakkam", "help" without needing any LLM loaded.
-  - If no model is downloaded or API key is absent, the assistant displays a clear instruction card with a direct path to download offline models in Settings.
-- **⚡ Default Offline Mode:**
-  - On-Device AI is now the default provider out of the box with zero external token requirements.
-- **🧠 Open-Source Model Hub:**
-  - One-tap download for Qwen 2.5 0.5B, Qwen 2.5 1.5B, DeepSeek R1 Distill Qwen 1.5B, and SmolLM2.
-- **📲 Accessibility & Restricted Settings Assistant:**
-  - Clear guide dialog to seamlessly allow Accessibility on Android 13 & 14+.
+- **🧠 Fixed On-Device AI Model Integrity Check Failure:**
+  - Resolved `"Downloaded model failed its integrity check"` error on DeepSeek R1 Distill 1.5B, Qwen 2.5 1.5B, SmolLM2 360M, and SmolLM2 1.7B.
+  - Replaced CloudFront HTTP ETags with authentic Git LFS SHA-256 digests so downloads verify and install instantly on device.
+- **🎨 Fixed UI Header Squishing in Model Cards:**
+  - Fixed long model names pushing badges into vertically squished letters.
+  - Refined model badges to responsive, clean tags (`NO TOKEN`, `GATED`, `REC`).
+- **⚡ Zero-Token 1-Tap Offline Inference:**
+  - Full support for local execution with zero internet once downloaded.
 
 ---
 
